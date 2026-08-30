@@ -2,6 +2,7 @@
 #pragma once
 
 #include <Arduino.h>
+#include <WiFiClientSecure.h>
 
 #include "config.h"
 
@@ -18,5 +19,4 @@ bool cloudGetStatus(const Config &cfg, LockStatus &status, String &err);
 bool cloudSetupWebhook(const Config &cfg, String &err);
 
 // Attach the ESP-IDF root CA bundle to a TLS client (also used by mqtt.cpp).
-class WiFiClientSecure;
 void cloudAttachCaBundle(WiFiClientSecure &client);
