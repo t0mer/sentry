@@ -1,0 +1,34 @@
+# Claude / AI assistant context — local only, never track
+CLAUDE.md
+.claude/
+.cursor/
+.aider*
+
+# Design / implementation / planning docs — local only
+/docs/
+docs/*
+*.design.md
+*.implementation.md
+
+# Arduino / PlatformIO build output
+build/
+.build/
+*.bin
+*.elf
+*.map
+*.hex
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Local secrets / device config
+secrets.h
+*.key
+*.pem
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
